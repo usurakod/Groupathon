@@ -1,4 +1,4 @@
-package com.example.inchararaj.groupathon;
+package com.example.umasurakod.groupathon;
 import android.widget.ImageView;
 import java.util.Date;
 
