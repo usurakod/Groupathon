@@ -6,11 +6,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 public class Group_details extends AppCompatActivity {
 
     TextView grpDetail;
     ListView listItems;
+    Toolbar groupName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class Group_details extends AppCompatActivity {
 
         grpDetail = (TextView)findViewById(R.id.detail_text);
         grpDetail.setText(getIntent().getStringExtra("GrpDetails"));
+      //  groupName = (Toolbar)findViewById(R.id.toolbar);
+       // groupName.setTitle(getIntent().getStringExtra("grpName"));
 
         listItems = (ListView)findViewById(R.id.list_items);
         String[] mem_Item = {"Group member", "Item Checklist"};
