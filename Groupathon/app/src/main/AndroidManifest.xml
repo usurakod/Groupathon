@@ -18,9 +18,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+<<<<<<< HEAD
         <activity android:name=".AccountActivity.LoginActivity" />
         <activity android:name=".AccountActivity.SignupActivity" />
         <activity android:name=".AccountActivity.ResetPasswordActivity"></activity>
+=======
+        <activity android:name=".create_group" />
+        <activity android:name=".Group_details"></activity>
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
     </application>
 
 </manifest>

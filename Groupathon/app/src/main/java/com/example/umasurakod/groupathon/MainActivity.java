@@ -1,8 +1,12 @@
 package com.example.umasurakod.groupathon;
 
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+=======
+import android.content.Intent;
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +36,12 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout myDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    private ImageView music;
+    private ImageView hacking;
+    private ImageView hiking;
+    private ImageView sports;
+    private ImageView photography;
+    private ImageView other;
 
     private Button btnChangePassword, btnRemoveUser,
             changePassword, remove, signOut;
@@ -46,12 +56,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         setdisplayCategories();
+=======
+
+        //setdisplayCategories();
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
 
         setdisplayEvents();
         myDrawerLayout =(DrawerLayout)findViewById(R.id.drawer_layout);
         mToggle = new ActionBarDrawerToggle(this,myDrawerLayout,R.string.open,R.string.close);
-
         myDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
@@ -60,9 +74,61 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         email = (TextView) findViewById(R.id.useremail);
 
+<<<<<<< HEAD
         //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         setDataToView(user);
+=======
+        music =(ImageView) findViewById(R.id.music_img);
+        music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        hacking = (ImageView) findViewById(R.id.hacking_img);
+        hacking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        hiking = (ImageView) findViewById(R.id.hiking_img);
+        hiking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        sports = (ImageView) findViewById(R.id.sports_img);
+        sports.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        photography = (ImageView) findViewById(R.id.photography_img);
+        photography.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        other = (ImageView) findViewById(R.id.other_img);
+        other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOncreateGrp();
+
+            }
+        });
+
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
 
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -185,7 +251,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
     }
+=======
+    public void openOncreateGrp(){
+        Intent intent = new Intent(this, create_group.class);
+        startActivity(intent);
+    }
+    // to select item from action bar
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(mToggle.onOptionsItemSelected(item)){
@@ -194,14 +268,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void setdisplayCategories() {
+    /*public void setdisplayCategories() {
         ArrayList<Integer> myImageList = new ArrayList<>();
         myImageList.add(R.drawable.music);
         myImageList.add(R.drawable.hacking);
         myImageList.add(R.drawable.hiking);
         myImageList.add(R.drawable.sports);
         myImageList.add(R.drawable.photography);
-        myImageList.add(R.mipmap.ic_launcher);
+        myImageList.add(R.drawable.joingrp);
         String[] names = {"Music", "Technology", "Adventure", "Sports", "Photography", "Others"};
 
         LinearLayout categories = findViewById(R.id.categories);
@@ -214,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
             image.setImageResource(myImageList.get(i));
             categories.addView(view);
         }
+<<<<<<< HEAD
     }
     public void setdisplayEvents() {
 
@@ -273,6 +348,9 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         progressBar.setVisibility(View.GONE);
     }
+=======
+    }*/
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
 
     @Override
     public void onStart() {
@@ -286,7 +364,11 @@ public class MainActivity extends AppCompatActivity {
         if (authListener != null) {
             auth.removeAuthStateListener(authListener);
         }
+<<<<<<< HEAD
     }
+=======
+
+>>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
 }
 
 
