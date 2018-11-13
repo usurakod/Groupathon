@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.VideoView;
 
+import com.example.umasurakod.groupathon.AccountActivity.LoginActivity;
+import com.example.umasurakod.groupathon.AccountActivity.SignupActivity;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -34,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
     private void startNextActivity() {
         if (isFinishing())
             return;
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, SignupActivity.class));
         finish();
     }
 }
