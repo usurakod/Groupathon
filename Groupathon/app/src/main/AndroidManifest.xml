@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.umasurakod.groupathon">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,14 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-<<<<<<< HEAD
         <activity android:name=".AccountActivity.LoginActivity" />
         <activity android:name=".AccountActivity.SignupActivity" />
-        <activity android:name=".AccountActivity.ResetPasswordActivity"></activity>
-=======
+        <activity android:name=".AccountActivity.ResetPasswordActivity" />
         <activity android:name=".create_group" />
-        <activity android:name=".Group_details"></activity>
->>>>>>> 30c97f859c154ed536bd3833f09550d9f7d826d0
+        <activity android:name=".Group_details" />
+        <activity android:name=".ListActivity"></activity>
     </application>
 
 </manifest>

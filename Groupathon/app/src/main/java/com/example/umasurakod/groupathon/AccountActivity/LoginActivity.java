@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        //Get Firebase auth instance
+
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login);
         btnReset = findViewById(R.id.btn_reset_password);
 
-        //Get Firebase auth instance
+
         auth = FirebaseAuth.getInstance();
 
         btnSignup.setOnClickListener(new View.OnClickListener() {

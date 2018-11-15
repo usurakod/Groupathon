@@ -1,4 +1,23 @@
 <resources>
+
+    <string-array name="titles">
+        <item>Title 1</item>
+        <item>Title 2</item>
+        <item>Title 3</item>
+        <item>Title 4</item>
+        <item>Title 5</item>
+        <item>Title 6</item>
+        <item>Title 7</item>
+    </string-array>
+    <string-array name="description">
+        <item>Desc 1</item>
+        <item>Desc 2</item>
+        <item>Desc 3</item>
+        <item>Desc 4</item>
+        <item>Desc 5</item>
+        <item>Desc 6</item>
+        <item>Desc 7</item>
+    </string-array>
     <string name="app_name">Groupathon</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
